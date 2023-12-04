@@ -9,6 +9,10 @@ public class AnimalsCage {
     @Autowired
     private Animal animal;
 
+    @Autowired
+    private Timer timer;
+    
+    
     public void whatAnimalSay() {
         System.out.println("Say:");
         System.out.println(animal.toString());
@@ -16,4 +20,15 @@ public class AnimalsCage {
         System.out.println(new Timer().getTime());
         System.out.println("________________________");
     }
+
+
+	/**
+	 * @return the timer
+	 */
+	public Timer getTimer() {
+		return timer;
+	}
+    
+    
+    
 }
